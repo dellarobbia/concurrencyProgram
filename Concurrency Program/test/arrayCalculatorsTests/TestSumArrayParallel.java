@@ -13,12 +13,12 @@ class TestSumArrayParallel {
 	@Test
 	//Test the length of the output arrays to ensure the correct number of integers are distributed
 	void testSplitArrayOddLength() {
-		ArrayList<Long> testArray = new ArrayList<Long>();
-		testArray.add(1L);
-		testArray.add(2L);
-		testArray.add(3L);
-		testArray.add(4L);
-		testArray.add(5L);
+		ArrayList<Integer> testArray = new ArrayList<Integer>();
+		testArray.add(1);
+		testArray.add(2);
+		testArray.add(3);
+		testArray.add(4);
+		testArray.add(5);
 		
 		SumArrayParallel testSumArray = new SumArrayParallel(testArray);
 		
@@ -44,13 +44,13 @@ class TestSumArrayParallel {
 	@Test
 	//Test the length of the output arrays to ensure the correct number of integers are distributed
 	void testSplitArrayEvenLength() {
-		ArrayList<Long> testArray = new ArrayList<Long>();
-		testArray.add(1L);
-		testArray.add(2L);
-		testArray.add(3L);
-		testArray.add(4L);
-		testArray.add(5L);
-		testArray.add(6L);
+		ArrayList<Integer> testArray = new ArrayList<Integer>();
+		testArray.add(1);
+		testArray.add(2);
+		testArray.add(3);
+		testArray.add(4);
+		testArray.add(5);
+		testArray.add(6);
 		
 		SumArrayParallel testSumArray = new SumArrayParallel(testArray);
 		
@@ -75,12 +75,12 @@ class TestSumArrayParallel {
 	
 	@Test
 	void testSumArray() {
-		ArrayList<Long> testArray = new ArrayList<Long>();
-		testArray.add(1L);
-		testArray.add(2L);
-		testArray.add(3L);
-		testArray.add(4L);
-		testArray.add(5L);
+		ArrayList<Integer> testArray = new ArrayList<Integer>();
+		testArray.add(1);
+		testArray.add(2);
+		testArray.add(3);
+		testArray.add(4);
+		testArray.add(5);
 		SumArrayParallel testSumArray = new SumArrayParallel(testArray);
 		
 		testSumArray.calculate();

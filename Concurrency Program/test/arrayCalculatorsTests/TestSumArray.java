@@ -12,12 +12,12 @@ class TestSumArray {
 
 	@Test
 	void testSumArray() {
-		ArrayList<Long> testArray = new ArrayList<Long>();
-		testArray.add(1L);
-		testArray.add(2L);
-		testArray.add(3L);
-		testArray.add(4L);
-		testArray.add(5L);
+		ArrayList<Integer> testArray = new ArrayList<Integer>();
+		testArray.add(1);
+		testArray.add(2);
+		testArray.add(3);
+		testArray.add(4);
+		testArray.add(5);
 		SumArray testSumArray = new SumArray(testArray);
 		
 		testSumArray.calculate();

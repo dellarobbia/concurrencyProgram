@@ -7,13 +7,13 @@ import randomizers.RandomArray;
 public class Main {
 
 	public static void main(String[] args) {
-		RandomArray randomArray = new RandomArray(1000);
+		RandomArray randomArray = new RandomArray(100000000);
 		
 		SumArray singleThreadArray = new SumArray(randomArray.getRandomArray());
 		SumArrayParallel parallelThreadArray = new SumArrayParallel(randomArray.getRandomArray());
 		
 		System.out.println("Calculating on single thread...");
-		singleThreadArray.run();
+		singleThreadArray.calculate();
 		System.out.print(singleThreadArray.toString());
 		
 		System.out.println("Calculating on parallel threads...");
