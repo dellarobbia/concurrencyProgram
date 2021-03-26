@@ -2,13 +2,19 @@ package arrayCalculators;
 
 import java.util.ArrayList;
 
-public class SumArray implements ArrayCalculators {
+import timers.Timer;
+
+public class SumArray implements ArrayCalculators, Runnable {
 	private ArrayList<Long> calcArray;
 	private long result;
+	private Timer calcTimer;
+	private boolean calcDone;
 	
 	public SumArray(ArrayList<Long> calcArray) {
 		setCalcArray(calcArray);
 		setResult(0);
+		setCalcTimer(new Timer());
+		setCalcDone(false);
 	}
 	
 	public ArrayList<Long> getCalcArray() {
@@ -25,9 +31,31 @@ public class SumArray implements ArrayCalculators {
 		this.result = result;
 	}
 	
+	public Timer getCalcTimer() {
+		return calcTimer;
+	}
+	public void setCalcTimer(Timer calcTimer) {
+		this.calcTimer = calcTimer;
+	}
+	
+	public boolean isCalcDone() {
+		return calcDone;
+	}
+	public void setCalcDone(boolean calcDone) {
+		this.calcDone = calcDone;
+	}
+
+	@Override
+	public void run() {
+		calculate();
+		setCalcDone(true);
+	}
+	
 	@Override
 	public void calculate() {
+		calcTimer.startTimer();
 		sumArray();
+		calcTimer.endTimer();
 	}
 	
 	public void sumArray() {
@@ -35,5 +63,12 @@ public class SumArray implements ArrayCalculators {
 			result += arrayInt;
 		}
 			
+	}
+	
+	public String toString() {
+		String displayMessage = 
+				"Sum: " + result + "\n" +
+				"Time: " + calcTimer.getResultTime() + " ms\n";
+		return displayMessage;
 	}
 }

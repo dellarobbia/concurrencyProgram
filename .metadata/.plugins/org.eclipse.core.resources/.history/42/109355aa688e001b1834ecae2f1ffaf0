@@ -1,0 +1,19 @@
+package arrayCalculatorsTests;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import randomizers.RandomArray;
+
+class TestRandomArray {
+
+	@Test
+	void testRandomArraySize() {
+		RandomArray testRandomArray = new RandomArray(100);
+		long arraySize = testRandomArray.getRandomArray().size();
+		
+		assertEquals(100, arraySize);
+	}
+
+}

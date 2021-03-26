@@ -1,0 +1,18 @@
+package main;
+
+import arrayCalculators.SumArray;
+import arrayCalculators.SumArrayParallel;
+import randomizers.RandomArray;
+
+public class Main {
+
+	public static void main(String[] args) {
+		RandomArray randomArray = new RandomArray(200000000);
+		
+		SumArray singleThreadArray = new SumArray(randomArray.getRandomArray());
+		SumArrayParallel parallelThreadArray = new SumArrayParallel(randomArray.getRandomArray());
+		
+		
+	}
+
+}
