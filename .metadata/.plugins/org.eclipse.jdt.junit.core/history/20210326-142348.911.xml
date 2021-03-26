@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestSumArrayParallel" project="Concurrency Program" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="arrayCalculatorsTests.TestSumArrayParallel" time="0.072" displayname="TestSumArrayParallel" uniqueid="[engine:junit-jupiter]/[class:arrayCalculatorsTests.TestSumArrayParallel]">
-    <testcase name="testSplitArrayOddLength" classname="arrayCalculatorsTests.TestSumArrayParallel" time="0.051" displayname="testSplitArrayOddLength()" uniqueid="[engine:junit-jupiter]/[class:arrayCalculatorsTests.TestSumArrayParallel]/[method:testSplitArrayOddLength()]"/>
-    <testcase name="testSplitArrayEvenLength" classname="arrayCalculatorsTests.TestSumArrayParallel" time="0.021" displayname="testSplitArrayEvenLength()" uniqueid="[engine:junit-jupiter]/[class:arrayCalculatorsTests.TestSumArrayParallel]/[method:testSplitArrayEvenLength()]"/>
-  </testsuite>
-</testrun>
