@@ -1,0 +1,37 @@
+package arrayCalculators;
+
+public class SumArray implements ArrayCalculators {
+	private long calcArray[];
+	private long result;
+	
+	public SumArray(long calcArray[]) {
+		setCalcArray(calcArray);
+		setResult(0);
+	}
+	
+	public long[] getCalcArray() {
+		return calcArray;
+	}
+	public void setCalcArray(long calcArray[]) {
+		this.calcArray = calcArray;
+	}
+	
+	public long getResult() {
+		return result;
+	}
+	public void setResult(long result) {
+		this.result = result;
+	}
+	
+	@Override
+	public void calculate() {
+		sumArray();
+	}
+	
+	public void sumArray() {
+		for(long arrayInt : calcArray) {
+			result += arrayInt;
+		}
+			
+	}
+}

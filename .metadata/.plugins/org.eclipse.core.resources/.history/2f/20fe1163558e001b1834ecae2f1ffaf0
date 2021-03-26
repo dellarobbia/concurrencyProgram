@@ -1,0 +1,21 @@
+package arrayCalculatorsTests;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import arrayCalculators.SumArray;
+
+class TestSumArray {
+
+	@Test
+	void testSumArray() {
+		long testArray[] = {1, 2, 3, 4, 5};
+		SumArray testSumArray = new SumArray(testArray);
+		
+		testSumArray.calculate();
+		
+		assertEquals(13, testSumArray.getResult());
+	}
+
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestSumArray" project="Concurrency Program" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="arrayCalculatorsTests.TestSumArray" time="0.037" displayname="TestSumArray" uniqueid="[engine:junit-jupiter]/[class:arrayCalculatorsTests.TestSumArray]">
+    <testcase name="testSumArray" classname="arrayCalculatorsTests.TestSumArray" time="0.037" displayname="testSumArray()" uniqueid="[engine:junit-jupiter]/[class:arrayCalculatorsTests.TestSumArray]/[method:testSumArray()]"/>
+  </testsuite>
+</testrun>

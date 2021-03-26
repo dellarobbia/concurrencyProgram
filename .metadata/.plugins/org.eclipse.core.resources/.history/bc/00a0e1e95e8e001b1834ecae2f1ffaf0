@@ -1,0 +1,28 @@
+package arrayCalculatorsTests;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.ArrayList;
+
+import org.junit.jupiter.api.Test;
+
+import arrayCalculators.SumArrayParallel;
+
+class TestSumArrayParallel {
+
+	@Test
+	//Test the length of the output arrays to ensure the correct number of integers are distributed
+	void testSplitArrayLength() {
+		ArrayList<Long> testArray = new ArrayList<Long>();
+		testArray.add(1L);
+		testArray.add(2L);
+		testArray.add(3L);
+		testArray.add(4L);
+		testArray.add(5L);
+		
+		SumArrayParallel testSumArray = new SumArrayParallel(testArray);
+		
+		testSumArray.splitArray();
+	}
+
+}

@@ -1,0 +1,11 @@
+package arrayCalculators;
+
+public class SumArray implements ArrayCalculators {
+
+	@Override
+	public void calculate() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

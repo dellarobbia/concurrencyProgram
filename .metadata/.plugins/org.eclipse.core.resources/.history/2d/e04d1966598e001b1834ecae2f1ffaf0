@@ -1,0 +1,9 @@
+package arrayCalculators;
+
+public class SumArrayParallel extends SumArray implements ArrayCalculators {
+
+	public SumArrayParallel(long[] calcArray) {
+		super(calcArray);
+	}
+
+}

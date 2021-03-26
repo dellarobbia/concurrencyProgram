@@ -1,0 +1,18 @@
+package arrayCalculators;
+
+import java.util.ArrayList;
+
+public class SumArrayParallel extends SumArray implements ArrayCalculators {
+
+	public SumArrayParallel(ArrayList<Integer> calcArray) {
+		super(calcArray);
+	}
+	
+	public void calculate() {
+		sumArray();
+	}
+	
+	public void sumArray() {
+		
+	}
+}

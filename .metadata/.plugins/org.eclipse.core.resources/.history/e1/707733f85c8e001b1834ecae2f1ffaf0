@@ -1,0 +1,35 @@
+package arrayCalculators;
+
+import java.util.ArrayList;
+
+public class SumArrayParallel extends SumArray implements ArrayCalculators {
+
+	public SumArrayParallel(ArrayList<Long> calcArray) {
+		super(calcArray);
+	}
+	
+	public void calculate() {
+		sumArray();
+	}
+	
+	public void sumArray() {
+		//Create two arrays to hold the numbers in parallel
+		ArrayList<Long> array1 = new ArrayList<Long>();
+		ArrayList<Long> array2 = new ArrayList<Long>();
+		
+		//Distribute the Integers in the main array to the new parallel arrays
+		long counter = 0;
+		long arrayPosition = 0;
+		
+		for(counter = 0; counter < getCalcArray().size(); counter++) {
+			arrayPosition = getCalcArray().get((int)counter);
+			array1.add(arrayPosition);
+			counter++;
+			
+			if(getCalcArray().get((int)counter) != null) {
+				arrayPosition = getCalcArray().get((int)counter);
+				array2.add(arrayPosition);
+			}
+		}
+	}
+}

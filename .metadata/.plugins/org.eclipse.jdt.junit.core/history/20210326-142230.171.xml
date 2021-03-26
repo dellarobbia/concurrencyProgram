@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestSumArrayParallel" project="Concurrency Program" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="arrayCalculatorsTests.TestSumArrayParallel" time="0.024" displayname="TestSumArrayParallel" uniqueid="[engine:junit-jupiter]/[class:arrayCalculatorsTests.TestSumArrayParallel]">
+    <testcase name="testSplitArrayOddLength" classname="arrayCalculatorsTests.TestSumArrayParallel" time="0.024" displayname="testSplitArrayOddLength()" uniqueid="[engine:junit-jupiter]/[class:arrayCalculatorsTests.TestSumArrayParallel]/[method:testSplitArrayOddLength()]"/>
+  </testsuite>
+</testrun>
