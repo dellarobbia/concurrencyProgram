@@ -22,7 +22,7 @@ class TestSumArrayParallel {
 		
 		SumArrayParallel testSumArray = new SumArrayParallel(testArray);
 		
-		testSumArray.splitArray();
+//		testSumArray.splitArray();
 		
 		int array1Length = 0;
 		int array2Length = 0;
@@ -54,7 +54,7 @@ class TestSumArrayParallel {
 		
 		SumArrayParallel testSumArray = new SumArrayParallel(testArray);
 		
-		testSumArray.splitArray();
+//		testSumArray.splitArray();
 		
 		int array1Length = 0;
 		int array2Length = 0;

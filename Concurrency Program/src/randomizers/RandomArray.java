@@ -21,7 +21,7 @@ public class RandomArray {
 		Random randomGen = new Random();
 		
 		for(long counter = 0; counter < arrayLength; counter++) {
-			randomArray.add(randomGen.nextInt());
+			randomArray.add(randomGen.nextInt(100));
 		}
 	}
 }
