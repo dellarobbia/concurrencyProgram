@@ -42,7 +42,6 @@ public class SumArray implements ArrayCalculators, Runnable {
 	@Override
 	public void calculate() {
 		sumArray();
-		setCalcDone(true);
 	}
 	
 	public void sumArray() {
