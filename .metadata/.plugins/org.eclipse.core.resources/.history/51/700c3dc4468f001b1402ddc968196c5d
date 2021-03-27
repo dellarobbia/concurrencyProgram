@@ -40,15 +40,28 @@ public class SumArrayParallel extends SumArray implements ArrayCalculators {
 	}
 	
 	public void sumArray() {
+		boolean thread1IsDone = false;
+		boolean thread2IsDone = false;
 		boolean calcIsDone = false;
 		
 		calcThread1.start();
 		calcThread2.start();
 		
-		while(calcIsDone == false) {
-			if(calcThread1.isAlive() == false && calcThread2.isAlive() == false) {
-				calcIsDone = true;
-			} 
+//		while(calcIsDone == false) {
+//			if(calcThread1.isAlive() == false && calcThread2.isAlive() == false) {
+//				calcIsDone = true;
+//			} 
+//		}
+		
+		while(thread1IsDone == false && thread2IsDone == false) {
+			if(thread1IsDone = false) {
+				if(calcThread1.isAlive() == false)
+					thread1IsDone = true;
+			}
+			if(thread2IsDone = false) {
+				if(calcThread2.isAlive() == false)
+					thread2IsDone = true;
+			}
 		}
 		
 		setResult(calcArray1.getResult() + calcArray2.getResult());

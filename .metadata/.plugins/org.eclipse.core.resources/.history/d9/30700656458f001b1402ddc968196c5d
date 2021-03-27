@@ -83,9 +83,9 @@ public class SumArrayParallel extends SumArray implements ArrayCalculators {
 //	}
 	
 	private void splitArray() {
-		int arraySize = getCalcArray().size();
+		long arraySize = getCalcArray().size();
 		
-		parallelArray1 = new ArrayList<>(getCalcArray().subList(0, ((arraySize) / 2)));
-		parallelArray2 = new ArrayList<>(getCalcArray().subList((arraySize) / 2, arraySize));
+		parallelArray1 = new ArrayList<Integer>(getCalcArray().subList(0, (int) ((arraySize) / 2)));
+		parallelArray2 = new ArrayList<Integer>(getCalcArray().subList(0, (int) ((arraySize) / 2)));
 	}
 }

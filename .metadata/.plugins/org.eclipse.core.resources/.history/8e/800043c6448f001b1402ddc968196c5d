@@ -65,27 +65,20 @@ public class SumArrayParallel extends SumArray implements ArrayCalculators {
 		calcThread2.setDaemon(false);
 	}
 	
-//	private void splitArray() {
-//		//Distribute the Integers in the main array to the new parallel arrays
-//		long counter = 0;
-//		int arrayPosition = 0;
-//		
-//		for(counter = 0; counter < getCalcArray().size(); counter++) {
-//			arrayPosition = getCalcArray().get((int)counter);
-//			parallelArray1.add(arrayPosition);
-//			counter++;
-//			
-//			if(counter < getCalcArray().size()) {
-//				arrayPosition = getCalcArray().get((int)counter);
-//				parallelArray2.add(arrayPosition);
-//			}
-//		}
-//	}
-	
 	private void splitArray() {
-		int arraySize = getCalcArray().size();
+		//Distribute the Integers in the main array to the new parallel arrays
+		long counter = 0;
+		int arrayPosition = 0;
 		
-		parallelArray1 = new ArrayList<>(getCalcArray().subList(0, ((arraySize) / 2)));
-		parallelArray2 = new ArrayList<>(getCalcArray().subList((arraySize) / 2, arraySize));
+		for(counter = 0; counter < getCalcArray().size(); counter++) {
+			arrayPosition = getCalcArray().get((int)counter);
+			parallelArray1.add(arrayPosition);
+			counter++;
+			
+			if(counter < getCalcArray().size()) {
+				arrayPosition = getCalcArray().get((int)counter);
+				parallelArray2.add(arrayPosition);
+			}
+		}
 	}
 }

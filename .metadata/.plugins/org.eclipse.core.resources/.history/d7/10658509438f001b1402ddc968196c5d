@@ -22,8 +22,6 @@ public class Main {
 		System.out.print(singleThreadArray.toString());
 		System.out.print("Time: " + calcTimer.getResultTime() + " nanoseconds\n\n");
 		
-		calcTimer.restartTimer();
-		
 		System.out.println("Calculating on parallel threads...");
 		calcTimer.startTimer();
 		parallelThreadArray.calculate();

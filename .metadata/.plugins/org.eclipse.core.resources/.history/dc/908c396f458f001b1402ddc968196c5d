@@ -30,7 +30,7 @@ class TestSumArrayParallel {
 		array1Length = testSumArray.getParallelArray1().size();
 		array2Length = testSumArray.getParallelArray2().size();
 		
-		if(array1Length == 2 && array2Length == 3) {
+		if(array1Length == 3 && array2Length == 2) {
 			assertTrue(true);
 		}
 		else {

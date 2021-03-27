@@ -93,13 +93,6 @@ public class Timer implements Timers
 		this.resultTime = resultTime;
 	}
 	
-	public void restartTimer()
-	{
-		setStartTime(0);
-		setEndTime(0);
-		setResultTime(0);
-	}
-	
 	@Override
 	public void startTimer() 
 	{
